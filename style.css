@@ -1,0 +1,91 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Common system fonts */
+    margin: 20px; /* Add some space around the content */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+* { /* Apply border-box sizing to all elements for easier layout */
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Search Container Styling */
+.search-container {
+    margin-bottom: 25px; /* Space below search box */
+    text-align: center; /* Center search box */
+}
+
+#searchInput {
+    padding: 10px 15px; /* More padding inside input */
+    width: 70%; /* Make input wider */
+    max-width: 600px; /* But not excessively wide */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 1rem;
+}
+
+label[for="searchInput"] {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Table Container Styling */
+.table-container {
+    overflow-x: auto; /* Add horizontal scroll on small screens if table is wide */
+    background-color: #fff; /* White background for the table area */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    max-width: 1000px; /* Max width for the table container */
+    margin: 0 auto; /* Center the table container */
+}
+
+/* Table Styling */
+#resultsTable {
+    width: 100%; /* Make table fill its container */
+    border-collapse: collapse; /* Remove space between borders */
+    margin-top: 10px;
+}
+
+/* Table Header Styling */
+#resultsTable thead th {
+    background-color: #007bff; /* Bootstrap blue header background */
+    color: white; /* White text */
+    padding: 12px 15px; /* Padding in header cells */
+    text-align: left; /* Align header text left */
+    border-bottom: 2px solid #0056b3; /* Darker blue bottom border */
+    font-weight: 600;
+}
+
+/* Table Body Cell Styling */
+#resultsTable tbody td {
+    padding: 10px 15px; /* Padding in data cells */
+    border-bottom: 1px solid #ddd; /* Light gray lines between rows */
+    vertical-align: middle; /* Align text vertically in cells */
+}
+
+/* Zebra Striping for Table Body Rows */
+#resultsTable tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; /* Very light gray for odd rows */
+}
+
+#resultsTable tbody tr:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+}
+
+/* Style for 'No matching data found' row */
+#resultsTable tbody tr td[colspan] {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d; /* Bootstrap secondary text color */
+    padding: 20px;
+}

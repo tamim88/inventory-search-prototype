@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Inventory Search Prototype</h1>
+
+    <div class="search-container">
+        <label for="searchInput">Search:</label>
+        <input type="text" id="searchInput" placeholder="Enter SKU, ASIN, FNSKU, or Box ID...">
+    </div>
+
+    <div class="table-container">
+        <table id="resultsTable">
+            <thead>
+                <tr>
+                    <th>SKU</th>
+                    <th>ASIN</th>
+                    <th>FNSKU</th>
+                    <th>Box ID</th>
+                </tr>
+            </thead>
+            <tbody id="resultsBody">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
